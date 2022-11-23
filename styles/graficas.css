@@ -161,8 +161,9 @@
     margin: 5px;
 }
 @media(max-width:768px) {
-    .grupos{
+      .grupos{
         align-items: center;
         display: flow-root;
+        position: relative;
     }
 }
