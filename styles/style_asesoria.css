@@ -76,8 +76,10 @@ transition: 0.5s;
     position: absolute;
     width: 80%;
     height: 120px;
-    top: 290px;
-    left: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
 }
 .conten_msj .cuerpo_msj{
     width: 80%;
@@ -318,17 +320,23 @@ main{
     
 }
 .zona_tarjetas .separador{
-    background-color: var(--morado1);
-    display: inline-block;
-    width: 30%;
-    height: 22px;
-    text-align: center;
-    color: white;
-    font-size: 1.6rem;
-    box-shadow: var(--sombra);
-    border: 2px solid white;
-    margin-top: 10px;
-    margin-bottom: 10px;
+   
+        background-image: url('../images/techback.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: inline-block;
+        width: 60%;
+        height: 25px;
+        text-align: center;
+        color: var(--cardborder);
+    
+        font-size: 1.7rem;
+        font-weight: bold;
+        box-shadow: var(--sombra);
+        border: 2px solid white;
+        justify-self: center;
+        border-radius: 6px;
+    
 }
 
 .zona_tarjetas .one_card{
@@ -416,11 +424,75 @@ border: 1px solid var(--morado2);
     font-weight: bolder;
     color: var(--blueComments);
 }
+
+.zona_tarjetas #inscribirme{
+    position: absolute;
+    min-width: 260px;
+    height: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    border: 1.9px solid var(--blueComments);
+    z-index: 1;
+    
+}
+
+.zona_tarjetas #inscribirme p{
+    font-size: 1.6rem;
+}
+
+.zona_tarjetas #inscribirme .titulo_asesoria p {
+width: 150px;
+}
+.zona_tarjetas #inscribirme .hora_asesoria p{
+    width: 110px;
+}
+.zona_tarjetas #inscribirme img{
+width: 25px;
+height: 25px;
+}
+.zona_tarjetas #inscribirme .valor_prog{
+    display: flex;
+    flex-direction: column;
+}
+.zona_tarjetas #inscribirme .valor_prog div{
+    align-self: center;
+    
+}
+.zona_tarjetas #inscribirme .valor_prog div input:nth-child(1){
+    background-color: var(--btnAceptar);
+    margin-right: 10px;
+    border-radius: 10px;
+    width: 100px;
+    height: 20px;
+    color:  white;
+    border: none;
+    box-shadow: var(--sombra);
+}
+.zona_tarjetas #inscribirme .valor_prog div input:nth-child(2){
+    background-color: var(--btnCancelar);
+    border-radius: 10px;
+    width: 100px;
+    color: white;
+    border:none;
+    height: 20px;
+    box-shadow: var(--sombra);
+}
+
 .inactivo{
-    display: none;
+    display: none !important;
 }
 
 @media (min-width:768px){
+
+    .zona_tarjetas .separador{
+        
+        width: 50%;
+        height: 26px;
+        font-size: 1.8rem ;
+     }
 
 .conten_msj {
     width: 320px;
@@ -536,28 +608,29 @@ height: 45px;
         width: 18px;
         height: 18px;
     }
-    .zona_tarjetas #inscribirme{
-        left: 300px;
-    }
+    
 }
 
 @media (min-width:1024px){
-
+    .conten_msj {
+        width: 320px;
+    }
 .frmdat {
     width: 40%;
 }
 .zona_tarjetas .separador{
-    background-color: var(--morado1);
-    display: inline-block;
-    width: 25%;
-    height: 30px;
-    text-align: center;
-    color: white;
-    font-size: 2.5rem;
-    box-shadow: var(--sombra);
-    border: 2px solid white;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    
+        background-color: var(--menuMob);
+        display: inline-block;
+        width: 50%;
+        height:25px;
+        text-align: center;
+        color: black;
+        font-size: 1.8rem;
+        box-shadow: var(--sombra);
+        border: 2px solid white;
+        
+    
 
 }
 .zona_tarjetas {
