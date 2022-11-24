@@ -1,6 +1,6 @@
 :root{
     --fondo:#E8F5FF;
-    --barraAside: #2311C4;
+    --barraAside: #1034ac;
     --fondoTec:#DAA0FF;
     --blueComments: #0094FF;
     --morado1:#9F1FF0;
@@ -172,13 +172,18 @@ background-color: white;
 .frmdat{
 background-color: #9ed5fcec;
 border: 1px solid var(--blueComments);
-height: 400px;
+height: 200px;
 border-radius: 5px;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
 gap: 20px;
+position: absolute;
+margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
 
 }
 .frmdat form{
@@ -404,6 +409,7 @@ border: 1px solid var(--morado2);
 
     display: flex;
     justify-content: space-around;
+    
 }
 .zona_tarjetas .one_card .valor_prog p{
     font-size: 1.2rem;
@@ -421,7 +427,7 @@ border: 1px solid var(--morado2);
 }
 .frmdat{    
     width: 90%;
-    height: 100%;
+    height: 200px;
 }
 .frmdat .res_Bus{
     

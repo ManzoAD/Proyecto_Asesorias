@@ -1,5 +1,5 @@
 //Apuntadores
-const detail = document.querySelector('.vr_detalles');
+const detail = document.getElementsByClassName('vr_detalles');
 const modifAsesoria = document.querySelector('.oper_assero');
 
 const btnAcepmodif = document.querySelector('#btAgreMod');
@@ -25,7 +25,11 @@ const canOperDelete = document.querySelector('#cancelDeleteAlumno');
 const msjAgregado = document.querySelector('#btnAcepAdd');
 const msjEliminado = document.querySelector('#btnAceptElim');
 //Eventos
-detail.addEventListener("click",WinDetalle);
+for (let i =0; i<detail.length; i++)
+detail[i].addEventListener("click",function(){
+    modifAsesoria.classList.toggle('inactivo'); 
+    console.log(i);
+});
 btnAcepmodif.addEventListener("click",WinDetalle_Open_Add);
 btnCancelmodif.addEventListener("click",WinDetalle_Cancel);
 winAddCerrar.addEventListener("click",closeWinAdd);
@@ -47,10 +51,10 @@ function closeWinAdd(){
     winAdd.classList.toggle('inactivo');
     modifAsesoria.classList.toggle('inactivo');
 }
-function WinDetalle(){
+/* function WinDetalle(){
 modifAsesoria.classList.toggle('inactivo');
 console.log("Detalle")
-}
+} */
 
 function WinDetalle_Open_Add(){
     modifAsesoria.classList.toggle('inactivo');
