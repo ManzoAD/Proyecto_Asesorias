@@ -13,12 +13,20 @@ const formSuger = document.querySelector(".formu_sugerencia");
 const msjSuger = document.querySelector(".msj_sugeG");
 const btnGuarSuge = document.querySelector(".btnAcepDug");
 
+const formulario = document.querySelector('#comentario')
 const btnSend = document.querySelector(".btn_sendS");
 const msSug = document.querySelector(".msj_emergente");
-btnSend.addEventListener("click",abrirSugeMsj);
-function abrirSugeMsj(){
-msSug.toggle('inactive');
-}
+btnSend.addEventListener("click",function(e){
+e.preventDefault();
+msSug.classList.toggle('inactive');
+});
+
+const sugeAceptada = document.querySelector('#aceptaSugerencia');
+sugeAceptada.addEventListener("click",function(){
+
+    msSug.classList.toggle('inactive');
+    
+})
 
 
 //btnSugerir.addEventListener("click",openSugerir);

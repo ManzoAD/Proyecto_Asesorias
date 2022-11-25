@@ -13,7 +13,28 @@
     --btnCancelar:#DD1313;
     --avisos:#FBF0F0;
 } 
-
+.conten_GUsuarios{
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    gap: 10px;
+}
+.conten_GUsuarios a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 8px;
+    display: inline-block;
+    width: 90px;
+    height: 20px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    background-color: var(--btnAceptar);
+    border: 1px solid white;
+    box-shadow: var(--sombra);
+}
 .usuario{
     justify-self: flex-start;
     border: 2px solid var(--morado1);
