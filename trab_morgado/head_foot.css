@@ -7,11 +7,12 @@ html{
     font-size: 62.5%;
     font-family: 'Buenard', serif;
 }
-body,html{
-    width: 100%;
+html{
+
     height: 100%;
 }
 body{
+    min-height: 100vh;
     display: grid;
     grid-template-rows: 60px 2fr 60px;
 }
@@ -308,7 +309,7 @@ color: var(--blueComments);
      }
      body{
          display: grid;
-         grid-template-columns: 180px 1fr;
+         grid-template-columns: 350px 1fr;
          
      }
      aside{

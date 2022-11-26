@@ -7,9 +7,11 @@ html{
     font-size: 62.5%;
     font-family: 'Buenard', serif;
 }
-body,html{
-    width: 100%;
+html{
     height: 100%;
+}
+body{
+    min-height: 100vh;
 }
 body{
     display: grid;
@@ -333,6 +335,7 @@ color: var(--blueComments);
      }
      main{
          background-color: var(--fondo);
+         height: 100vh;
        
      }
      
@@ -432,7 +435,6 @@ color: var(--blueComments);
     body{
         display: grid;
         grid-template-columns: 220px 1fr;
-        height: 100vh;
     }
 header{
     display: none;
