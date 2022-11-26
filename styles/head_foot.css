@@ -21,6 +21,7 @@ aside{
 .content_aside{
     position: sticky;
     top: 0;
+    
 }
 
 :root{
@@ -57,7 +58,7 @@ header .logoTecNM figcaption{
 color: white;
 font-family: 'Buenard', serif;
 font-size: 1.1rem;
-background-color:var(--morado1) ;
+background-color:var(--blueComments) ;
 border-radius: 2px;
 border-top: 1px solid white;
 border-right: 1px solid white;
@@ -69,7 +70,7 @@ header .logoTecNM img{
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: var(--morado1);
+    background-color: var(--blueComments);
     border: 1px  solid white;
 
 }
@@ -244,7 +245,7 @@ nav ul li a img{
 }
 main{
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 /*Estilos footer -----------------------------------*/
 footer{
@@ -431,6 +432,7 @@ color: var(--blueComments);
     body{
         display: grid;
         grid-template-columns: 220px 1fr;
+        height: 100vh;
     }
 header{
     display: none;
