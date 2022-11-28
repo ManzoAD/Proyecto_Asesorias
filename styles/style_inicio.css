@@ -40,10 +40,10 @@ aside{
     --sombra: 0px 4px 4px rgba(0, 0, 0, 0.25);
     --btnAceptar:#1AA438;
     --btnCancelar:#DD1313;
-    --avisos:#FBF0F0;
+    --avisos:#fbf5f5;
     --cobaltBlue:#0047ab;
     --MayaBlue: #73c2fb;
-    --BBlue: #89cff0;
+    --BBlue: #89cff0d6;
 }
 
 header{
@@ -162,7 +162,7 @@ header .logoHalcon img{
    z-index: 1;
 }
 
-.notificaciones div{
+ .notificaciones div{
     width: 96%;
     background-color: var(--avisos);
     display: flex;
@@ -177,7 +177,7 @@ header .logoHalcon img{
     border-radius: 3px;
 
 }
-.notificaciones p:nth-child(1){
+ .notificaciones p:nth-child(1){
     color: white;
     font-weight: 600;
     text-align: center;
@@ -190,12 +190,12 @@ header .logoHalcon img{
     box-shadow: var(--sombra);
     padding: 10px;
 }
-.notificaciones div img{
+ .notificaciones div img{
     width: 25px;
     height: 25px;
     align-self: center;
 }
-.notificaciones input{
+ .notificaciones input{
     align-self: flex-end;
     width: 65px;
     height: 22px;
@@ -206,6 +206,8 @@ header .logoHalcon img{
     border-radius: 3px;
 
 }
+
+
 
 .opacar{
     opacity: 0.5;
@@ -271,14 +273,12 @@ main{
     height: 300px;
     border-radius: 5px;
     border: 1px solid var(--barraAside);
-    
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     overflow-y: scroll;
     overscroll-behavior-y: contain;
     scroll-snap-type:  y proximity;
     position: relative;
-    
-   
+    background-color: white;
 }
 .Sugerir .encabezado{
     background-color: var(--blueComments);
@@ -631,32 +631,60 @@ width: 90%;
 
 /*Estilos buscador ---------------------------------------------------*/
 .form_busqueda{
-    width: 98.5%;
-    height: 160px;
+    width: 98%;
+    height: 200px;
     /* border: 1px solid #218CD9; */
     /* background-color: #00E1FF; */
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
+    
 }
-.form_busqueda div{
+.form_busqueda .content_barraBusqueda{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 99.5%;
-    height: 120px;
-    /* border-top: 3px solid var(--cobaltBlue);
-    border-bottom: 3px solid var(--cobaltBlue);
-     */
+    width: 100%;
+    height: 100%;
    border-radius: 4px;
-    padding: 10px;
-    /* box-shadow: var(--sombra); */
-
     
- 
+    /* box-shadow: var(--sombra); */
+    background-image: url(../images/Asesorados.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    opacity: 1;
 }
-.form_busqueda div img{
+.form_busqueda div .fondo{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff92
+    
+}
+.form_busqueda div .fondo img{
+    height: 45px;
+}
+
+
+.content_barraBusqueda div figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.content_barraBusqueda div figure p{
+    font-size: 1.2rem;
+    color: var(--cobaltBlue);
+    font-style: italic;
+    background-color: var(--BBlue);
+    border-radius: 5px;
+}
+/* .form_busqueda div img{
     width: 400px;
     
     
@@ -666,7 +694,7 @@ width: 90%;
     text-align: center;
     color: whitesmoke;
     font-weight: bolder;
-}
+} */
 .form_busqueda form {
     display: flex;
     width: 100%;
@@ -908,9 +936,6 @@ color: var(--blueComments);
             
      }
      .content_aside{
-        /* position: sticky; */
-        /* top: 0; */
-        
         display: grid;
         grid-template-rows: 25px 1fr 1fr 1fr;
         height: 100vh;
@@ -1129,6 +1154,12 @@ color: var(--blueComments);
         left: 0;
         right: 0;
     }
+    .form_busqueda div .fondo img{
+        height: 50px;
+    }
+    .content_barraBusqueda div figure p{
+        font-size: 1.4rem;
+    }
     footer{
         display: none;
     }
@@ -1300,22 +1331,34 @@ footer {
     .Sugerir .content_article{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    .Sugerir .content_article article{
+        width: 80%;
+        background-color: var(--avisos);
+        box-shadow: var(--sombra);
     }
 
     .form_busqueda{
         align-self: flex-start;
+        height: 600px;
     }
     .form_busqueda input[type="search"]{
         height: 40px;
     }
      #cont_letrero div{
-        height: 300px;
-        
+        height: 500px;
+        box-shadow: var(--sombra);
         
     }
     #cont_letrero div img{
-        width: 70%;
-        height: 200px;
+        width: 150px;
+        height: 150px;
+
+    }
+
+    .content_barraBusqueda div figure p{
+        font-size: 3.8rem;
     }
     .msj_emergente{
         width: 30%;
@@ -1350,5 +1393,80 @@ footer {
         
     
     }
+    /* Otras Notificaciones */
+/* Otras notificaciones -------------- */
+
+.avisado{
+    /* background-color: var(--barraAside); */
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    background-color: var(--barraAside);
+    border: 1px solid white;
+    position: absolute;
+    z-index: 1;
+    right: 0.2px;
+    bottom: 1px;
+    display: flex;
+    gap: 38px;
+    align-items:  center;
+    
+}
+.avisado li div{
+    width: 95%;
+    margin: 0 auto;
+}
+.avisado li{
+    border: none;
+    box-shadow: none;
+    width: 100%;
+   
+}
+.avisado li:nth-child(1){
+    font-size: 1.6rem;
+    width: 100%;
+    height: 22px;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+    text-align: center;
+    padding: 3px;
+}
+nav ul .avisado li:hover{
+    background-color: var(--barraAside);
+}
+
+.avisado div{
+    width: 96%;
+    background-color: var(--avisos);
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px ;
+    text-align: center;
+    border: 1px solid white;
+    box-shadow: var(--sombra);
+    font-size: 1.3rem;
+    font-weight: 500;
+    box-shadow: var(--sombra);
+    border-radius: 3px;
+}
+
+
+.avisado div img{
+    width: 25px;
+    height: 25px;
+    align-self: center;
+}
+.avisado input{
+    align-self: flex-end;
+    width: 65px;
+    height: 22px;
+    color: whitesmoke;
+    background-color: var(--fondoTec);
+    border: 1px solid white;
+    box-shadow: var(--sombra);
+    border-radius: 3px;
+
+}
   
 }

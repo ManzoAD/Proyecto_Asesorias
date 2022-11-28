@@ -20,6 +20,16 @@ function dibujarCirculo(color,Xinicial,Yinicial,Xfinal,Yfinal,lienzo){
 const menuHamburger = document.getElementById("menuh");
 const menuNot = document.getElementById("menunotif");
 
+const notifiAside = document.querySelector('.avisado');
+const linknotifi = document.querySelector('.lknotifi');
+const borra = document.querySelector("#borra");
+borra.addEventListener("click", function(){
+    notifiAside.classList.toggle('inactive');
+})
+linknotifi.addEventListener("click" ,function(){
+notifiAside.classList.toggle('inactive')
+console.log("click")
+});
 const menu =document.querySelector(".menu_mobile");
 const notifi= document.querySelector(".notificaciones");
 const main = document.querySelector(".myMain");

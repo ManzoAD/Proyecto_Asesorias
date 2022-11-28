@@ -129,7 +129,7 @@
     height: 5px;
     width: 15px;
     border-color: #000000;
-    background: #FF6F06;
+    background: var(--fondoTec);
     margin: 5px;
 }
 .Reporte .color-4{
@@ -150,7 +150,7 @@
     height: 5px;
     width: 15px;
     border-color: #000000;
-    background: #ED0000;
+    background: #E8F5FF;
     margin: 5px;
 }
 .Reporte .color-7{

@@ -77,7 +77,6 @@ section{
     width: 100%;
     display:  grid;
     grid-template-columns: 1fr ;
-    grid-auto-rows: 300px 80px 400px ;
     justify-items: center;
     align-items: center;
 
@@ -372,4 +371,23 @@ font-size: 1.6rem;
 .inactivo{
     display: none;
 }
-
+@media(min-width:1040px){
+    section{
+        padding-top: 10;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 400px 60px 400px;
+        align-items: flex-start;
+    }
+    section .Asesorias_Activas{
+        grid-column: 1/2;
+    }
+    section .btnsAdmin{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    section .Mas_Sugeridos{
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+    
+}

@@ -46,8 +46,7 @@
                    <li><a href="asesorias.html"><img src="../images/asesor.png" alt="icono Asesorias"> Asesorias</a></li>
                    <li><a href="EvaluacionFinal.html"><img src="../images/evalua.png" alt="icono Evaluacion"> Evaluacion</a></li>
                    <li><a href="../trab_morgado/Asesorias.html"><img src="../images/estats.png" alt="icono Estadistica"> Estadistica</a></li>
-                   <li><a href="#"><img src="../images/notifi.png" alt="icono notificacion"> Avisos</a></li>
-                   <li><a href="#"><img src="../images/configu.png" alt="icono configu"> Configurar</a></li>
+                   <li><a href="#"><img src="../images/configu.png" alt="icono configu"> Configurar</a> </li>
                    <li><a href="../index.html"><img src="../images/Salir.png" alt="icono salir"> Salir</a></li>
                 </ul>
             </nav>
@@ -73,7 +72,52 @@
                <li><a href="asesorias.html"><img src="../images/asesor.png" alt="icono Asesorias"> Asesorias</a></li>
                <li><a href="EvaluacionFinal.html"><img src="../images/evalua.png" alt="icono Evaluacion"> Evaluacion</a></li>
                <li><a href="../trab_morgado/Asesorias.html"><img src="../images/estats.png" alt="icono Estadistica"> Estadistica</a></li>
-               <li><a href="#"><img src="../images/notifi.png" alt="icono notificacion"> Avisos</a></li>
+               <li ><a href="#" class="lknotifi"><img src="../images/notifi.png" alt="icono notificacion">Avisos</a>
+               <!--  <div class="notimi inactive">
+                    <p>Mis Notificaciones</p>
+                    <div>
+                        <img src="../images/clock.png" alt="icono tiempo">
+                        <p>Tu asesoria esta por comenzar</p>
+                        <p>12:00 -- 01:00pm</p>
+                    </div>
+                    <div>
+                        <img src="../images/group.png" alt="icono personas">
+                        <p>Se han unido nuevos alumnos</p>
+                    </div>
+                    <div>
+                        <img src="../images/calendar.png" alt="icono calendario">
+                        <p>Proxima Asesoria</p>
+                        <p>Martes 12:00 -- 01:00pm</p>
+                    </div>
+                    <input type="button" value="Borrar">
+               </div> -->
+               <ul class="inactive avisado" id="avi">
+                <li>Mis Avisos</li>
+                <li>
+                    <div>
+                        <img src="../images/clock.png" alt="icono tiempo">
+                        <p>Tu asesoria esta por comenzar</p>
+                        <p>12:00 -- 01:00pm</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="../images/group.png" alt="icono personas">
+                        <p>Se han unido nuevos alumnos</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="../images/calendar.png" alt="icono calendario">
+                        <p>Proxima Asesoria</p>
+                        <p>Martes 12:00 -- 01:00pm</p>
+                    </div>
+                </li>
+                <li>
+                    <input type="button" value="Borrar" id="borra">
+                </li>
+               </ul>
+            </li>
                <li><a href="#"><img src="../images/configu.png" alt="icono configu"> Configurar</a></li>
                <li><a href="../index.html"><img src="../images/Salir.png" alt="icono salir"> Salir</a></li>
             </ul>
@@ -93,11 +137,15 @@
 </div>  
 
     <main class="myMain">
-        
         <section class="form_busqueda"id="cont_letrero">
             <div class="content_barraBusqueda" >
-            <img src="../images/letrero.png" alt="Imagen logo ITJ">
-            
+            <div class="fondo">
+                <figure>
+                <img src="../images/logoITJ.webp" alt="Imagen logo ITJ">
+                <p>Asesorias ITJ</p>
+                <p>Aclara tus dudas, Asesorate hoy</p>
+                </figure>
+            </div>
              </div>
             <form action="" class="">
                 <input type="search" placeholder="Nombre Asesoria">

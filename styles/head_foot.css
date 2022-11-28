@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+ .content_aside{
+    position: sticky;
+    top: 0;
+} 
 html{
     font-size: 62.5%;
     font-family: 'Buenard', serif;
@@ -20,11 +24,11 @@ body{
 aside{
     display: none;
 }
-.content_aside{
+/* .content_aside{
     position: sticky;
     top: 0;
     
-}
+} */
 
 :root{
     --fondo:#E8F5FF;
@@ -200,6 +204,67 @@ header .logoHalcon img{
 
 }
 
+/* Otras notificaciones -------------- */
+
+.avisado{
+    /* background-color: var(--barraAside); */
+   
+    width: 150px;
+    height: 87.6vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+   border-radius: 2px;
+   background-color: red;
+   
+}
+
+.avisado div{
+    width: 96%;
+    background-color: var(--avisos);
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px ;
+    text-align: center;
+    border: 1px solid white;
+    box-shadow: var(--sombra);
+    font-size: 1.3rem;
+    font-weight: 500;
+    box-shadow: var(--sombra);
+    border-radius: 3px;
+}
+.avisado p:nth-child(1){
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--blueComments);
+    height: 35px;
+    width: 145px;
+    box-shadow: var(--sombra);
+    padding: 10px;
+}
+
+.avisado div img{
+    width: 25px;
+    height: 25px;
+    align-self: center;
+}
+.avisado input{
+    align-self: flex-end;
+    width: 65px;
+    height: 22px;
+    color: whitesmoke;
+    background-color: var(--fondoTec);
+    border: 1px solid white;
+    box-shadow: var(--sombra);
+    border-radius: 3px;
+
+}
+
 .opacar{
     opacity: 0.5;
 }
@@ -312,13 +377,13 @@ color: var(--blueComments);
      body{
          display: grid;
          grid-template-columns: 180px 1fr;
-         
+         grid-template-rows: 1fr;
      }
      aside{
          background-color: var(--barraAside);
          display: flex;
          flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: flex-start;
      }
      .content_aside{
         display: grid;
@@ -329,13 +394,15 @@ color: var(--blueComments);
      aside{
         background-color: var(--barraAside);
         width: 100%;
-        height: 100vh;
+        height: 100%;
         display: flex ;
         flex-direction: column;
      }
      main{
          background-color: var(--fondo);
-         height: 100vh;
+         
+         grid-template-rows: 20px;
+         
        
      }
      
